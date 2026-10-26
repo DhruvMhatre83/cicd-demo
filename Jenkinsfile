@@ -14,19 +14,19 @@ pipeline {
 
         stage('Install') {
             steps {
-                sh 'npm ci'
+                bat 'npm ci'
             }
         }
 
         stage('Test') {
             steps {
-                sh 'npm test'
+                bat 'npm test'
             }
         }
 
         stage('Build') {
             steps {
-                sh 'npm run build'
+                bat 'npm run build'
             }
         }
     }
